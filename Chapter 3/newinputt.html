@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Fig.3.1 form input types and attributes-->
+    <html>
+    <head>
+	<meta charset="utf-8">
+	<title>Input types</title>
+</head>
+        <body>
+    <h1>New Html5 input types</h1>
+    <p>This form demostrates the new Html5 input types</p>
+    <form method="post" action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+    	<p>
+    	<label>Color:
+    		<input type="color" autofocus/>
+</label>  		
+</p>
+            <p>
+        	<label>Date:
+        		<input type="date" /> 
+        	     </label>
+                   </p>
+    <P>
+	<Label>Datetime:
+		<input type="Datetime-local" />    
+	     </Label>
+          </P>
+                <p>
+	            <label>Email:
+		              <input type="Email" required />
+	                   </label>
+                        </p>
+    <p>
+	<label>month:
+		<input type="month" required />	
+	     </label>
+          </p>
+                <p>
+	            <label>Number: 
+		              <input type="number"
+		               min="10"
+		               max="30"
+		               step="7"
+		               value="30" />
+	                        </label> 
+                            </p>
+    <p>
+	<label>Range:
+	    0 <input type="Range" 
+		min="0"
+		max="20"
+		value="10"/> 20
+	    </label>
+        </p>
+
+                <P>
+	            <label>Search:
+		              <input type="search" placeholder = "search query"/>
+		              </label>
+	                  </P>
+	<p>
+	<label>Tel:
+          <input type="tel" placeholder = "(###) ###-####" pattern="/(/d{3}/) +/d{3}-/d
+          {4}" required />
+		  </label>
+	      </p>
+
+	            <p>
+		        <label>Time:
+			          <input type="time" />
+		              </label>
+	                  </p>
+	<p>
+	<label>URL:
+		  <input type="url" placeholder="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" />
+		  </label>
+		  </p>
+
+	            <p>
+		        <label>Week:
+			          <input type="week"/>
+		              </label>
+	                  </p>
+	<p>
+	<input type="submit" value="submit" />
+	<input type="reset" value="clear"/>
+	</p>
+
+</form>
+
+</body>
+</html>

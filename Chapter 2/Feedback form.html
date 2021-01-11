@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Fig 2.14 form-->
+<!--Form with a text field and hidden fields-->
+    <html>
+    <head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+    <h1>Feedback form</h1>
+    <p>Fill out this form to get enrolled to the course</p>
+<!--This tag starts the form,gives the method of sending information and the location of the form-processing script-->
+<form method="post" action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+
+	      <input type="hidden" name="recipient"
+	value="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+	      <input type="hidden" name="subject"
+	value="Feedback Form">
+	      <input type="hidden" name="redirect"
+	value="main.html">
+<!--input name text-inserts a text field-->
+          <p><label>Name:
+	<input type="name" type="text" size="25" maxlength="30">
+</label></p>
+<!--input types"submit" and "reset" insert buttons for subimitting and clearing the form's contents,
+respectively-->
+             <p>
+	         <input type="submit" name="submit">
+	         <input type="reset" name="clear">
+</p>
+</form>
+
+
+
+</body>
+</html>
