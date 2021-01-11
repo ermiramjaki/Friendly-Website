@@ -1,0 +1,59 @@
+<!--Flexile box layout module-->
+<html>
+    <head>
+    <meta charset="utf-8">
+	<title>Flexible Box Layout Model</title>
+	<link rel='https://fonts.google.com/?query=rosario' rel="stylesheet" type='text/css'>
+	<style type="text/css">
+		.flexbox
+		{
+			width: 800px;
+			height: 600px;
+			display: -webkit-box;
+			-webkit-box-orient:horizontal;
+			box-orient: horizontal;
+		}
+	.flexbox > div
+	{
+		-webkit-transition: 1s ease-out;
+		transition: 1s ease-out;
+		-webkit-border-radius:10px;
+		border-radius: 10px;
+		border:2px solid black;
+		width: 120px;
+		margin:10px -10px 10px 0px;
+		padding: 20px 20px 20px 20px;
+		box-shadow: 10px 10px 10px dimgrey;
+	}
+.flexbox > div:child(1){ background-color: lightgrey; }
+.flexbox > div:child(2){ background-color: lightgrey; }
+.flexbox > div:child(3){ background-color: lightgrey; }
+.flexbox > div:child(4){ background-color: lightgrey; } 
+
+.flexbox> div:hover{
+	  width: 200px; color: blue; font-weight: bold; }
+
+.flexbox > div:child(1){ background-color: royalblue; }
+.flexbox > div:child(2){ background-color: crimson; }
+.flexbox > div:child(3){ background-color: crimson; }
+.flexbox > div:child(4){ background-color: darkgreen; }
+p {
+	height: 400px; overflow: hidden; font-family: "rosario"}
+</style>
+</head>
+<body>
+<div class="flexbox">
+<div><img src="../foto/flower.png" alt="flower"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p></div>
+<div><img src="../foto/quote.jpg" alt="quote">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p></div>
+<div><img src="../foto/flower.png" alt="flower"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p></div>
+<div><img src="../foto/quote.jpg" alt="quote">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+
+</body>
+</html>
