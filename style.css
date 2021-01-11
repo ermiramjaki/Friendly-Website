@@ -1,0 +1,421 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+ *
+ {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Poppins', sans-serif;
+ 	scroll-behavior: smooth;
+ }
+
+ p {
+ 	font-weight: 300;
+ 	color: #111;
+ }
+ body{
+ 	background-color: #e8efe4;
+ 	min-height: 1000px;
+ }
+  .er{
+  color: #000;
+  margin-bottom: 430px;
+  margin-right: 200px;
+  background-color: #e2eae6;
+  width: 400px;
+  border: 15px black;
+  padding: 15px;
+  text-align: center;
+ 
+ }
+  .banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(around.jpg);
+    background-size: cover;
+  }
+  .banner .content{
+    max-width: 900px;
+    text-align: center;
+  }
+  .banner .content h2{
+    font-size: 3em;
+    color: black;
+     }
+  .content h2{
+    padding-bottom: 400px;
+    padding-left: 80px;
+  }
+  .banner .content p {
+  	font-size: 1em;
+  	color: black;
+  }
+  .btn {
+  	font-size: 1em;
+  	color: #fff;
+  	background: #d60000;
+  	display: inline-block;
+  	padding: 10px 10px;
+  	margin-top: 30px;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	letter-spacing: 2px;
+  	transition: 0.5s;
+  	 }
+   .btn:hover{
+   	letter-spacing: 6px;
+   }
+   
+/*Navigation Bar starts here*/
+   header
+   {
+   	position: fixed;
+   	top: 0;
+   	left: 0;
+   	width: 100%;
+   	padding: 40px 100px;
+   	z-index: 10000;
+   	display: flex;
+   	justify-content: space-between;
+   	align-items: center;
+   	transition: 0.5s;
+    }
+
+    header.sticky{
+    	background: #fff;
+    	padding: 10px 100px;
+      box-shadow: 0 5 px 20px rgba(0,0,0,0.05)
+    }
+   header .logo{
+   	color: #fff;
+   	font-weight: 700;
+   	font-size: 2em;
+   	text-decoration: none;
+   }
+   header.sticky .logo{
+     color: #111;
+   }
+    header .logo span 
+   {
+   	color: #d60000;
+   }
+
+   	header .navigation 
+   	{
+   		position: relative;
+   		display: flex;
+   	}
+    header .navigation li {
+    	list-style: none;
+    	margin-left: 30px;
+    }
+    header .navigation li a {
+    	text-decoration: none;
+    	color: black;
+    	font-weight: 300;
+    }
+    header.sticky .navigation li a{
+    	color: #111;
+    }
+    header .navigation li a:hover{
+    	color: #d60000;
+    }
+   
+    header .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #d60000;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: -2;
+    }
+    .dropdown-content a{
+      color: black;
+      padding: 10px 10px;
+      padding-right: 40px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+     display: block;
+}
+
+/*ENDS navigation bar*/
+    section {
+    	padding:100px;
+    }
+    .row {
+    	position: relative;
+    	width: 100%;
+    	display:flex;
+    	justify-content: space-between;
+    }
+    .row .col50{
+    	position: relative;
+
+    	}
+    .titleText{
+    	color: #111;
+    	font-size: 2em;
+    	font-weight: 300;
+    }
+    .titleText span{
+    	color: #d60000;
+    	font-weight: 700;
+    	font-size: 1.5em;
+
+    }
+    #Portfolio .content{
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+    .Portfolio .content .box {
+      width: 330px;
+      margin: 20px;
+      border: 15px solid #fff;
+      box-shadow: 0 05px 100px (0,0,0,0.08);}
+
+    .Portfolio .content .box .imgBx{
+      position: relative;
+      width: 300px;
+      height: 400px;
+    }
+    .Portfolio .content .box .imgBx img
+    {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      
+    }
+    .groove {border-style: groove;
+      padding-left: 20px;
+      color: black;
+    }
+    
+  
+/*here starts the hobbie section*/
+    .title {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: column;
+    }
+    .hobit {
+      text-align: center;
+    }
+    .Hobbies .content{
+    	display: flex;
+    	justify-content: center;
+    	flex-direction: row-reverse;
+    	flex-wrap: wrap;
+    	margin-top: 40px;
+    }
+    .Hobbies .content .box {
+    	width: 245px;
+    	margin: 15px;
+    	border: 15px solid #fff;
+    	box-shadow: 0 05px 35px (0,0,0,0.08);
+    }
+    .Hobbies .content .box .imgBx{
+    	position: relative;
+    	width: 100%;
+    	height: 300px;
+    }
+    .Hobbies .content .box .imgBx img
+    {
+    	position: absolute; 
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover;
+    }
+    #Photos .content{
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .Photos .content .box {
+      width: 245px;
+      margin: 15px;
+      border: 15px solid #fff;
+      box-shadow: 0 05px 35px (0,0,0,0.08);}
+
+    .Photos .content .box .imgBx{
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+    .Photos .content .box .imgBx img
+    {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    
+      .Assignments {
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+       
+      }
+      .Assignments li a{
+        color: #ffffff;
+      }
+      u {
+        margin: 10px;      }
+
+      .Contact{
+      background: url(cb.png);
+      background-size: cover;
+      }
+      .contactForm{
+        padding: 50px 50px;
+        background: #fff;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+        max-width: 500px;
+
+      }
+      .contactForm .inputBox{
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .contactForm .inputBox input,
+      .contactForm .inputBox input{
+        width: 100%;
+        border: 1px solid #555;
+        padding: 10px;
+        color: #111;
+        outline: none;
+        font-size: 16px;
+        font-weight: 300;
+        resize: none;
+      }
+      .contactForm .inputBox input[type="submit"]
+      {
+        font-size: 1em;
+        color: #fff;
+        background: black;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        max-width: 100px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+      }
+     
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.icons{
+  padding-left: 950px;
+  font-size: 30px;
+  text-underline-position: none;
+}
+.icons a:hover {
+  color: darkred;
+  text-decoration: none;
+}
+.icons a{
+  color: black; 
+  text-decoration: none;
+}
+
+
+      .copyrightText{
+        padding: 8px 40px;
+        border-top: 1px solid black;
+        text-align: center;
+      }
+      .copyrightText p{
+        color: black;
+      }
+       .copyrightText a{
+        color: #fff;
+      }
+      
+      footer {
+        background:  #d60000;
+        margin: 50px;
+      }
+
+
+
+ @media and(max-width: 991px)
+ {
+    .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(around.jpg);
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+}
+@media screen and(max-width: 320px);
+{
+    .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(around.jpg);
+    background-size: cover;
+}
+
+}
+@media screen and (max-width: 380px)
+ {
+    .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(around.jpg);
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+}
